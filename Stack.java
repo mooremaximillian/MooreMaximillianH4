@@ -30,6 +30,26 @@ public class Stack
      System.out.println("");
    }
  }
+ 
+ public void addItem(Node newItem)
+ {
+   newItem.setNext(this.top);
+   this.top = newItem;
+ }
+ 
+ public void push(Node newNode)
+ {
+   if(this.isEmpty())
+   {
+     newNode.setNext(this.top);
+   this.top = newNode;
+   }
+   else
+   {
+     
+   
+ }
+ }
         
         
         
